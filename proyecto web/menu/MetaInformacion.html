@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Información y Recursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ejemplo {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meta Información y Recursos en HTML</h1>
+        
+        <h2>Etiquetas Meta</h2>
+        <p>Las etiquetas meta proporcionan información sobre el documento HTML. Se colocan en el elemento &lt;head&gt; y no son visibles para los usuarios.</p>
+
+        <h3>Tipos comunes de meta tags:</h3>
+        <ul>
+            <li><strong>charset:</strong> Define la codificación de caracteres</li>
+            <li><strong>viewport:</strong> Controla la visualización en dispositivos móviles</li>
+            <li><strong>description:</strong> Describe el contenido de la página</li>
+            <li><strong>keywords:</strong> Palabras clave para motores de búsqueda</li>
+            <li><strong>author:</strong> Especifica el autor del documento</li>
+            <li><strong>robots:</strong> Instrucciones para los bots de búsqueda</li>
+        </ul>
+
+        <div class="ejemplo">
+            <h3>Ejemplo de meta tags:</h3>
+            <code>
+                <pre>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Descripción de mi página web"&gt;
+    &lt;meta name="keywords" content="HTML, CSS, JavaScript, programación"&gt;
+    &lt;meta name="author" content="Tu Nombre"&gt;
+    &lt;meta name="robots" content="index, follow"&gt;
+    
+    &lt;!-- Open Graph meta tags para redes sociales --&gt;
+    &lt;meta property="og:title" content="Título de la página"&gt;
+    &lt;meta property="og:description" content="Descripción para redes sociales"&gt;
+    &lt;meta property="og:image" content="url-de-la-imagen.jpg"&gt;
+    
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Recursos Externos</h2>
+        <p>HTML permite enlazar recursos externos como CSS y JavaScript:</p>
+
+        <div class="ejemplo">
+            <h3>Enlaces a recursos externos:</h3>
+            <code>
+                <pre>
+&lt;!-- CSS --&gt;
+&lt;link rel="stylesheet" href="estilos.css"&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+
+&lt;!-- Favicon --&gt;
+&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;
+
+&lt;!-- Fuentes web --&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet"&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Atributos importantes de meta</h2>
+        <ul>
+            <li><strong>name:</strong> Especifica el tipo de meta información</li>
+            <li><strong>content:</strong> Especifica el contenido/valor</li>
+            <li><strong>property:</strong> Usado principalmente para Open Graph</li>
+            <li><strong>http-equiv:</strong> Proporciona información del encabezado HTTP</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

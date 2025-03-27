@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ejemplo {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formularios en HTML</h1>
+        
+        <h2>Elementos básicos de formularios</h2>
+        <p>Los formularios son elementos fundamentales en HTML que permiten recopilar datos del usuario.</p>
+
+        <h3>Elementos principales:</h3>
+        <ul>
+            <li><strong>&lt;form&gt;</strong> - Contenedor principal del formulario</li>
+            <li><strong>&lt;input&gt;</strong> - Campo de entrada (texto, número, email, etc.)</li>
+            <li><strong>&lt;textarea&gt;</strong> - Campo de texto multilínea</li>
+            <li><strong>&lt;select&gt;</strong> - Lista desplegable</li>
+            <li><strong>&lt;button&gt;</strong> - Botón para enviar o resetear</li>
+            <li><strong>&lt;label&gt;</strong> - Etiqueta para los campos</li>
+        </ul>
+
+        <div class="ejemplo">
+            <h3>Ejemplo de formulario:</h3>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad" min="0" max="120">
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="pais">País:</label><br>
+                    <select id="pais" name="pais">
+                        <option value="españa">España</option>
+                        <option value="mexico">México</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Intereses:</label><br>
+                    <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                    <label for="deportes">Deportes</label><br>
+                    <input type="checkbox" id="musica" name="intereses" value="musica">
+                    <label for="musica">Música</label>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+
+            <h3>Código del ejemplo:</h3>
+            <code>
+                <pre>
+&lt;form action="#" method="post"&gt;
+    &lt;div&gt;
+        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+        &lt;input type="text" id="nombre" name="nombre" required&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="edad"&gt;Edad:&lt;/label&gt;
+        &lt;input type="number" id="edad" name="edad" min="0" max="120"&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+        &lt;textarea id="mensaje" name="mensaje" rows="4" cols="50"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="pais"&gt;País:&lt;/label&gt;
+        &lt;select id="pais" name="pais"&gt;
+            &lt;option value="españa"&gt;España&lt;/option&gt;
+            &lt;option value="mexico"&gt;México&lt;/option&gt;
+            &lt;option value="argentina"&gt;Argentina&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+        &lt;button type="reset"&gt;Limpiar&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Tipos de input más comunes:</h2>
+        <ul>
+            <li><strong>text</strong> - Texto simple</li>
+            <li><strong>password</strong> - Campo de contraseña</li>
+            <li><strong>email</strong> - Correo electrónico</li>
+            <li><strong>number</strong> - Números</li>
+            <li><strong>date</strong> - Fecha</li>
+            <li><strong>checkbox</strong> - Casillas de verificación</li>
+            <li><strong>radio</strong> - Botones de opción única</li>
+            <li><strong>file</strong> - Subida de archivos</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

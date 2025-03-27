@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces y Navegación en HTML</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Enlaces y Navegación</h1>
+        
+        <h2>Enlaces básicos</h2>
+        <p>Los enlaces se crean con la etiqueta <code>&lt;a&gt;</code> y el atributo <code>href</code>:</p>
+
+        <div class="ejemplo">
+            <code>
+                <pre>
+&lt;!-- Enlace a una página externa --&gt;
+&lt;a href="https://www.ejemplo.com"&gt;Visita nuestro sitio web&lt;/a&gt;
+
+&lt;!-- Enlace a una página interna --&gt;
+&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;
+
+&lt;!-- Enlace a una sección específica --&gt;
+&lt;a href="#seccion1"&gt;Ir a sección 1&lt;/a&gt;
+
+&lt;!-- Enlace para descargar un archivo --&gt;
+&lt;a href="documento.pdf" download&gt;Descargar PDF&lt;/a&gt;
+
+&lt;!-- Enlace que abre en una nueva pestaña --&gt;
+&lt;a href="https://www.ejemplo.com" target="_blank"&gt;Abrir en nueva pestaña&lt;/a&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Tipos de rutas</h2>
+        <ul>
+            <li><strong>Absoluta:</strong> https://www.ejemplo.com/pagina.html</li>
+            <li><strong>Relativa al dominio:</strong> /carpeta/pagina.html</li>
+            <li><strong>Relativa al documento:</strong> ./pagina.html o ../carpeta/pagina.html</li>
+        </ul>
+
+        <h2>Ejemplo práctico de navegación</h2>
+        <div class="ejemplo">
+            <h3>Estructura de navegación:</h3>
+            <code>
+                <pre>
+&lt;nav class="menu-principal"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="productos.html"&gt;Productos&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="servicios.html"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Atributos importantes de enlaces</h2>
+        <ul>
+            <li><strong>href:</strong> URL del destino</li>
+            <li><strong>target:</strong> Dónde abrir el enlace (_blank, _self)</li>
+            <li><strong>rel:</strong> Relación con la página enlazada</li>
+            <li><strong>download:</strong> Para descargar el recurso</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

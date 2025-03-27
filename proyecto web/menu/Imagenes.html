@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes y Multimedia en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ejemplo {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .imagen-ejemplo {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Imágenes y Multimedia en HTML</h1>
+        
+        <h2>Imágenes</h2>
+        <p>Las imágenes se insertan usando la etiqueta <code>&lt;img&gt;</code>. Los atributos principales son:</p>
+        <ul>
+            <li><strong>src</strong>: La ruta de la imagen</li>
+            <li><strong>alt</strong>: Texto alternativo para accesibilidad</li>
+            <li><strong>width</strong>: Ancho de la imagen</li>
+            <li><strong>height</strong>: Alto de la imagen</li>
+        </ul>
+
+        <h2>Ejemplo de imagen:</h2>
+        <div class="ejemplo">
+            <code>
+                <pre>
+&lt;img src="imagen.jpg" 
+     alt="Descripción de la imagen" 
+     width="300" 
+     height="200"&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Elementos de Video</h2>
+        <p>Los videos se pueden insertar usando la etiqueta <code>&lt;video&gt;</code>:</p>
+        <div class="ejemplo">
+            <code>
+                <pre>
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    Tu navegador no soporta el elemento de video.
+&lt;/video&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Elementos de Audio</h2>
+        <p>El audio se puede insertar usando la etiqueta <code>&lt;audio&gt;</code>:</p>
+        <div class="ejemplo">
+            <code>
+                <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Formatos soportados</h2>
+        <h3>Imágenes:</h3>
+        <ul>
+            <li>JPEG/JPG - Para fotografías</li>
+            <li>PNG - Para imágenes con transparencia</li>
+            <li>GIF - Para animaciones simples</li>
+            <li>WebP - Formato moderno con mejor compresión</li>
+            <li>SVG - Para gráficos vectoriales</li>
+        </ul>
+
+        <h3>Video:</h3>
+        <ul>
+            <li>MP4</li>
+            <li>WebM</li>
+            <li>OGG</li>
+        </ul>
+
+        <h3>Audio:</h3>
+        <ul>
+            <li>MP3</li>
+            <li>WAV</li>
+            <li>OGG</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML Obsoletas</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Etiquetas HTML Obsoletas</h1>
+        
+        <p>Algunas etiquetas que se usaban en versiones anteriores de HTML ya no se recomiendan en HTML5. Estas etiquetas han sido reemplazadas por alternativas más semánticas o CSS.</p>
+
+        <h2>Etiquetas Obsoletas Comunes:</h2>
+        <ul>
+            <li><strong>&lt;font&gt;</strong> - Para formatear texto (usar CSS en su lugar)</li>
+            <li><strong>&lt;center&gt;</strong> - Para centrar contenido (usar CSS text-align)</li>
+            <li><strong>&lt;strike&gt;</strong> - Para texto tachado (usar &lt;del&gt; o CSS)</li>
+            <li><strong>&lt;frame&gt;</strong> y <strong>&lt;frameset&gt;</strong> - Para dividir la ventana (usar CSS grid/flex)</li>
+            <li><strong>&lt;big&gt;</strong> - Para texto grande (usar CSS font-size)</li>
+            <li><strong>&lt;tt&gt;</strong> - Para texto monoespaciado (usar &lt;code&gt; o CSS)</li>
+            <li><strong>&lt;marquee&gt;</strong> - Para texto en movimiento (usar CSS animations)</li>
+        </ul>
+
+        <h2>Ejemplo de código antiguo vs. moderno:</h2>
+        <div class="ejemplo">
+            <h3>Código obsoleto:</h3>
+            <code>
+                <pre>
+&lt;center&gt;
+    &lt;font color="red" size="5"&gt;
+        &lt;b&gt;Texto importante&lt;/b&gt;
+    &lt;/font&gt;
+    &lt;marquee&gt;Texto en movimiento&lt;/marquee&gt;
+&lt;/center&gt;
+                </pre>
+            </code>
+
+            <h3>Código moderno equivalente:</h3>
+            <code>
+                <pre>
+&lt;div class="texto-centrado"&gt;
+    &lt;p class="texto-destacado"&gt;
+        &lt;strong&gt;Texto importante&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div class="animacion-texto"&gt;Texto en movimiento&lt;/div&gt;
+&lt;/div&gt;
+
+/* CSS correspondiente */
+.texto-centrado {
+    text-align: center;
+}
+.texto-destacado {
+    color: red;
+    font-size: 1.5em;
+}
+.animacion-texto {
+    animation: deslizar 5s linear infinite;
+}
+                </pre>
+            </code>
+        </div>
+
+        <h2>¿Por qué evitar estas etiquetas?</h2>
+        <ul>
+            <li>No siguen los estándares web modernos</li>
+            <li>Mezclan contenido con presentación</li>
+            <li>Pueden causar problemas de compatibilidad</li>
+            <li>Dificultan el mantenimiento del código</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

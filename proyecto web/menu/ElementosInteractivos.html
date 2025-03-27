@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Interactivos y Gráficos</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="contenido">
+        <h1>Elementos Interactivos y Gráficos en HTML</h1>
+
+        <h2>Elementos Interactivos</h2>
+        <ul>
+            <li><strong>&lt;button&gt;</strong> - Botones interactivos</li>
+            <li><strong>&lt;details&gt;</strong> y <strong>&lt;summary&gt;</strong> - Contenido expandible</li>
+            <li><strong>&lt;dialog&gt;</strong> - Ventanas modales</li>
+            <li><strong>&lt;menu&gt;</strong> - Menús contextuales</li>
+        </ul>
+
+        <h2>Elementos Gráficos</h2>
+        <ul>
+            <li><strong>&lt;img&gt;</strong> - Imágenes</li>
+            <li><strong>&lt;svg&gt;</strong> - Gráficos vectoriales</li>
+            <li><strong>&lt;canvas&gt;</strong> - Dibujo y gráficos dinámicos</li>
+            <li><strong>&lt;picture&gt;</strong> - Imágenes responsivas</li>
+        </ul>
+
+        <h2>Ejemplo Práctico</h2>
+        <div class="ejemplo">
+            <h3>Código:</h3>
+            <code>
+                <pre>
+&lt;!-- Ejemplo de botón interactivo --&gt;
+&lt;button onclick="alert('¡Hola!')"&gt;Haz clic aquí&lt;/button&gt;
+
+&lt;!-- Ejemplo de details/summary --&gt;
+&lt;details&gt;
+    &lt;summary&gt;Ver más información&lt;/summary&gt;
+    &lt;p&gt;Aquí hay contenido adicional que se puede expandir y contraer.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;!-- Ejemplo de SVG --&gt;
+&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"/&gt;
+&lt;/svg&gt;
+
+&lt;!-- Ejemplo de imagen responsiva --&gt;
+&lt;picture&gt;
+    &lt;source media="(min-width: 800px)" srcset="imagen-grande.jpg"&gt;
+    &lt;source media="(min-width: 400px)" srcset="imagen-mediana.jpg"&gt;
+    &lt;img src="imagen-pequeña.jpg" alt="Imagen responsiva"&gt;
+&lt;/picture&gt;
+                </pre>
+            </code>
+
+            <h3>Resultado:</h3>
+            <div class="demo-interactivo">
+                <button onclick="alert('¡Hola!')">Haz clic aquí</button>
+
+                <details>
+                    <summary>Ver más información</summary>
+                    <p>Aquí hay contenido adicional que se puede expandir y contraer.</p>
+                </details>
+
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"/>
+                </svg>
+            </div>
+        </div>
+
+        <h2>Consideraciones importantes</h2>
+        <ul>
+            <li>Los elementos interactivos deben ser accesibles mediante teclado</li>
+            <li>Siempre proporcionar textos alternativos para imágenes</li>
+            <li>Considerar el rendimiento al usar elementos gráficos pesados</li>
+            <li>Asegurar que los elementos interactivos sean intuitivos para el usuario</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ejemplo {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Listas en HTML</h1>
+        
+        <p>HTML ofrece tres tipos principales de listas para organizar el contenido:</p>
+
+        <h2>1. Listas Ordenadas (ol)</h2>
+        <p>Se utilizan cuando el orden de los elementos es importante. Cada elemento se numera automáticamente.</p>
+        <div class="ejemplo">
+            <h3>Ejemplo de lista ordenada:</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+            <code>
+                <pre>
+&lt;ol&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+    &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ol&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>2. Listas No Ordenadas (ul)</h2>
+        <p>Se utilizan cuando el orden no es importante. Los elementos se marcan con viñetas.</p>
+        <div class="ejemplo">
+            <h3>Ejemplo de lista no ordenada:</h3>
+            <ul>
+                <li>Manzanas</li>
+                <li>Naranjas</li>
+                <li>Plátanos</li>
+            </ul>
+            <code>
+                <pre>
+&lt;ul&gt;
+    &lt;li&gt;Manzanas&lt;/li&gt;
+    &lt;li&gt;Naranjas&lt;/li&gt;
+    &lt;li&gt;Plátanos&lt;/li&gt;
+&lt;/ul&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>3. Listas de Definición (dl)</h2>
+        <p>Se utilizan para crear una lista de términos y sus definiciones.</p>
+        <div class="ejemplo">
+            <h3>Ejemplo de lista de definición:</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web</dd>
+                <dt>CSS</dt>
+                <dd>Lenguaje para estilizar páginas web</dd>
+            </dl>
+            <code>
+                <pre>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje de marcado para crear páginas web&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje para estilizar páginas web&lt;/dd&gt;
+&lt;/dl&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Listas Anidadas</h2>
+        <p>También es posible anidar listas dentro de otras listas:</p>
+        <div class="ejemplo">
+            <ul>
+                <li>Frutas
+                    <ul>
+                        <li>Cítricos
+                            <ul>
+                                <li>Naranja</li>
+                                <li>Limón</li>
+                            </ul>
+                        </li>
+                        <li>Tropicales
+                            <ul>
+                                <li>Mango</li>
+                                <li>Piña</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>

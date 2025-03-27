@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ejemplo {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tablas en HTML</h1>
+        
+        <p>Las tablas en HTML se utilizan para mostrar datos en formato de filas y columnas. Los elementos principales son:</p>
+        
+        <ul>
+            <li><strong>&lt;table&gt;</strong> - Define una tabla</li>
+            <li><strong>&lt;tr&gt;</strong> - Define una fila</li>
+            <li><strong>&lt;th&gt;</strong> - Define una celda de encabezado</li>
+            <li><strong>&lt;td&gt;</strong> - Define una celda de datos</li>
+        </ul>
+
+        <h2>Ejemplo de una tabla básica:</h2>
+        
+        <div class="ejemplo">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+                <tr>
+                    <td>Ana García</td>
+                    <td>25</td>
+                    <td>Madrid</td>
+                </tr>
+                <tr>
+                    <td>Juan López</td>
+                    <td>30</td>
+                    <td>Barcelona</td>
+                </tr>
+            </table>
+
+            <h3>Código del ejemplo:</h3>
+            <code>
+                <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;Edad&lt;/th&gt;
+        &lt;th&gt;Ciudad&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ana García&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;Madrid&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Juan López&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+        &lt;td&gt;Barcelona&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </code>
+        </div>
+
+        <h2>Elementos adicionales de tabla:</h2>
+        <ul>
+            <li><strong>&lt;thead&gt;</strong> - Agrupa el contenido del encabezado</li>
+            <li><strong>&lt;tbody&gt;</strong> - Agrupa el contenido del cuerpo</li>
+            <li><strong>&lt;tfoot&gt;</strong> - Agrupa el contenido del pie</li>
+            <li><strong>&lt;caption&gt;</strong> - Define un título para la tabla</li>
+        </ul>
+
+        <h2>Atributos comunes:</h2>
+        <ul>
+            <li><strong>colspan</strong> - Combina columnas</li>
+            <li><strong>rowspan</strong> - Combina filas</li>
+            <li><strong>border</strong> - Define el borde de la tabla</li>
+            <li><strong>width</strong> - Define el ancho de la tabla</li>
+        </ul>
+
+        <p><a href="index.html">Volver al menú principal</a></p>
+    </div>
+</body>
+</html>
